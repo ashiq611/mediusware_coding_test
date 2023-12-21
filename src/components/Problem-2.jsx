@@ -92,7 +92,7 @@ const Problem2 = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        `${API_BASE_URL}${
+        `https://contact.mediusware.com/api/${
           country ? `country-contacts/${country}/` : "contacts/"
         }?page=${page}`
       );
